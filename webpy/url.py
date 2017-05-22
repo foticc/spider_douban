@@ -1,0 +1,5 @@
+
+urls=('/*','login',
+      '/index','index'
+      )
+
