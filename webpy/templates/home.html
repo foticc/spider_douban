@@ -5,9 +5,11 @@ $def with(username)
   <title>HOME</title>
   <meta charset="utf-8">
   <link rel="stylesheet" type="text/css" href="./static/css/bootstrap.css">
-  <link rel="stylesheet" type="text/css" href="./static/css/wangEditor.min.css">
+	<style>
+		body { padding-top: 70px; }
+	</style>
 <body>
-  <<div class="container">
+  <div class="container">
 	<div class="row clearfix">
 		<div class="col-md-12 column">
 			<nav class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
@@ -83,24 +85,24 @@ $def with(username)
 		</div>
 		
 	</div>
-	<div class="row clearfix">
-		<div class="col-md-6 column">
-		<textarea id="textarea"></textarea>
+	<div class="row clearfix" >
+		<div class="col-md-6 column" style="margin-left: -97px;width: auto;">
+			<ul class="nav nav-pills nav-stacked">
+				<li role="presentation" class="active"><a href="list" id="artlist" target="if">文章列表</a></li>
+  				<li role="presentation"><a href="add" id="addart" target="if">添加新文章</a></li>
+			</ul>
 		</div>
 		<div class="col-md-6 column">
+			<iframe src="list" name="if" style="width:1000px;height:539px;border: none;"></iframe>
 		</div>
 	</div>
 	<div class="row clearfix">
 		<div class="col-md-12 column">
+
 		</div>
 	</div>
 </div>
   <script src="./static/js/jquery.min.js"></script>
   <script src="./static/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="./static/js/wangEditor.min.js"></script>
-	<script type="text/javascript">
-		var editor = new wangEditor('textarea');
-		editor.create();
-	</script>
 </body>
 </html>

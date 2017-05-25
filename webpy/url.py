@@ -1,5 +1,8 @@
 
 urls=('/*','login',
-      '/index','index'
+      '/index','index',
+      '/list*','list',
+      '/add','add',
+      '/addart','article'
       )
 
