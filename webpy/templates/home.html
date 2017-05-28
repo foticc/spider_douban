@@ -1,64 +1,23 @@
 $def with(username)
-<!DOCTYPE html>
 <html>
 <head>
   <title>HOME</title>
   <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <link rel="stylesheet" type="text/css" href="./static/css/bootstrap.css">
 	<style>
 		body { padding-top: 70px; }
 	</style>
 <body>
-  <div class="container">
+  <div class="container-fluid">
 	<div class="row clearfix">
 		<div class="col-md-12 column">
 			<nav class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
 				<div class="navbar-header">
 					 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button> <a class="navbar-brand" href="#">Brand</a>
 				</div>
-				
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-					<ul class="nav navbar-nav">
-						<li class="active">
-							 <a href="#">Link</a>
-						</li>
-						<li>
-							 <a href="#">Link</a>
-						</li>
-						<li class="dropdown">
-							 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown<strong class="caret"></strong></a>
-							<ul class="dropdown-menu">
-								<li>
-									 <a href="#">Action</a>
-								</li>
-								<li>
-									 <a href="#">Another action</a>
-								</li>
-								<li>
-									 <a href="#">Something else here</a>
-								</li>
-								<li class="divider">
-								</li>
-								<li>
-									 <a href="#">Separated link</a>
-								</li>
-								<li class="divider">
-								</li>
-								<li>
-									 <a href="#">One more separated link</a>
-								</li>
-							</ul>
-						</li>
-					</ul>
-					<form class="navbar-form navbar-left" role="search">
-						<div class="form-group">
-							<input class="form-control" type="text" />
-						</div> <button type="submit" class="btn btn-default">Submit</button>
-					</form>
 					<ul class="nav navbar-nav navbar-right">
-						<li>
-							 <a href="#">Link</a>
-						</li>
 						<li class="dropdown">
 							 <a href="#" class="dropdown-toggle" data-toggle="dropdown">$username<strong class="caret"></strong></a>
 							<ul class="dropdown-menu">
@@ -85,15 +44,15 @@ $def with(username)
 		</div>
 		
 	</div>
-	<div class="row clearfix" >
-		<div class="col-md-6 column" style="margin-left: -97px;width: auto;">
+	<div class="row center-block" style="height:524px;">
+		<div class="col-md-2 column sidebar">
 			<ul class="nav nav-pills nav-stacked">
-				<li role="presentation" class="active"><a href="list" id="artlist" target="if">文章列表</a></li>
+				<li role="presentation"><a href="list" id="artlist" target="if">文章列表</a></li>
   				<li role="presentation"><a href="add" id="addart" target="if">添加新文章</a></li>
 			</ul>
 		</div>
-		<div class="col-md-6 column">
-			<iframe src="list" name="if" style="width:1000px;height:539px;border: none;"></iframe>
+		<div class="col-md-10 column">
+			<iframe src="list" name="if" height="100%" width="100%" frameborder="0" scrolling="no"></iframe>
 		</div>
 	</div>
 	<div class="row clearfix">
